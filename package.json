@@ -1,6 +1,6 @@
 {
   "name": "games_for_brains",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Text game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -34,5 +34,7 @@
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.1.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
