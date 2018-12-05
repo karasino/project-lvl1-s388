@@ -1,6 +1,6 @@
 {
   "name": "games_for_brains",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Text game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -32,7 +32,11 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.6"
+    "@babel/preset-env": "^7.1.6",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
     "readline-sync": "^1.4.9"
