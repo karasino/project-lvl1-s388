@@ -1,9 +1,10 @@
 {
   "name": "games_for_brains",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Text game",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
