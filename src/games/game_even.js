@@ -1,28 +1,18 @@
-import readlineSync from 'readline-sync';
-import { isEven, getRandomInt } from '..';
+import { cons } from 'hexlet-pairs';
+import gameOutput from '..';
 
-export default () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if number even otherwise answer "no".');
-  const numberOfRounds = 3;
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  const evenGameRound = (roundsBeforeEnd) => {
-    if (roundsBeforeEnd === 0) {
-      console.log(`Congratulations, ${userName}!`);
-      return;
-    }
-    const randomInt = getRandomInt(1, 100);
-    const rightAnswer = isEven(randomInt) ? 'yes' : 'no';
-    console.log(`Question: ${randomInt}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (rightAnswer === userAnswer) {
-      console.log('Correct!');
-      evenGameRound(roundsBeforeEnd - 1);
-      return;
-    }
-    console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
-    console.log(`Let's try again, ${userName}!`);
-  };
-  evenGameRound(numberOfRounds);
+const gameRules = 'Answer "yes" if number even otherwise answer "no".';
+
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min) + min);
+
+const isEven = number => number % 2 === 0;
+
+const amountOfRounds = 3;
+
+const generateGameData = () => {
+  const question = getRandomInt(1, 100);
+  const answer = isEven(question) ? 'yes' : 'no';
+  return cons(question, answer);
 };
+
+export default () => gameOutput(gameRules, generateGameData, amountOfRounds);
