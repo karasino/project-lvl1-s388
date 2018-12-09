@@ -20,7 +20,7 @@ export default (description, gameData) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (rightAnswer === userAnswer) {
       console.log('Correct!');
-      gameRound(roundsBeforeEnd - 1, gameData());
+      gameRound(roundsBeforeEnd - 1);
       return;
     }
     console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${rightAnswer}".`);
