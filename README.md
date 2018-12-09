@@ -6,7 +6,15 @@ Games for brains
 
 Package installation guide and example of "even game" run:
 [![asciicast](https://asciinema.org/a/yRqoNdeFmXUSU2Bx0jdFDjMAu.svg)](https://asciinema.org/a/yRqoNdeFmXUSU2Bx0jdFDjMAu)
+
 Package installation guide and example of "calc game" run:
 [![asciicast](https://asciinema.org/a/Wn1bVjVmYF6ZhGvI4Z3QjMKYp.svg)](https://asciinema.org/a/Wn1bVjVmYF6ZhGvI4Z3QjMKYp)
+
 Package installation guide and example of "gcd game" run:
 [![asciicast](https://asciinema.org/a/jwiMaJfFcJM9Hg2tdyuCqx9HZ.svg)](https://asciinema.org/a/jwiMaJfFcJM9Hg2tdyuCqx9HZ)
+
+Package installation guide and example of "progression game" run:
+[![asciicast](https://asciinema.org/a/pS1zdcFfDBlgbZtlulRjyzcNc.svg)](https://asciinema.org/a/pS1zdcFfDBlgbZtlulRjyzcNc)
+
+Package installation guide and example of "prime game" run:
+[![asciicast](https://asciinema.org/a/Lv805nSA0vLkmMTSHKOSuXUv5.svg)](https://asciinema.org/a/Lv805nSA0vLkmMTSHKOSuXUv5)
