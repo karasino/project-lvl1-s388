@@ -6,10 +6,10 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const isPrime = (number) => {
   const lowestDivisor = 3;
+  if (number < 2) return false;
+  if (number === 2) return true;
+  if (number % 2 === 0) return false;
   const isPrimeIter = (divisor) => {
-    if (number < 2) return false;
-    if (number === 2) return true;
-    if (number % 2 === 0) return false;
     if (divisor === number) return true;
     if (number % divisor === 0) return false;
     return isPrimeIter(divisor + 2);
